@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<title>Home</title>
+<link type="text/css" rel="stylesheet"href="fist.css">
+</head>
+<body>
+<nav>
+<ul>
+<li class="selected">Home</li>
+<li><a href="about-us.html">About Us</a></li>
+<li><a href="our-songs.html">Our Songs</a></li>
+<li><a href="see-us-play.html">See Us Play</a></li>
+<li><a href="playing.html">Playing a Concert</a></li>
+</ul>
+</nav>
+<h1>We are the Nanonauts!</h1>
+<p>Click the image to change it!</p>
+<p>
+<img id="display-image" onclick="swapImage()" src="NINJA_FACE_FORWARD.png" />
+</p>
+<script>
+function swapImage() {
+var imageDisplayed = document.getElementById('display-image');
+if (imageDisplayed.src.match("NINJA_FACE_FORWARD.png")) {
+imageDisplayed.src = "NINJA_RADICAL.png";
+}
+else {
+imageDisplayed.src = "NINJA_FACE_FORWARD.png";
+}
+}
+</script>
+<p>Try our games</p>
+            <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/24605022/?autostart=false" frameborder="0" allowfullscreen></iframe>
+    
+  
+</body>
+</html>
